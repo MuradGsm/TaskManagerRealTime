@@ -22,7 +22,6 @@ async def register_service(user_data: UserRequest):
       full_name=user_data.full_name,
       hashed_password=hash_password(user_data.password),
       is_active=user_data.is_active,
-      is_admin=user_data.is_admin,
       status=user_data.status,
       avatar_url=user_data.avatar_url,
       created_at=datetime.now(),

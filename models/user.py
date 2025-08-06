@@ -8,7 +8,6 @@ class UserRequest(BaseModel):
     full_name: str
     password: str
     is_active: bool
-    is_admin: bool = Field(default=False)
     status: str
     avatar_url: str
 
