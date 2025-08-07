@@ -1,6 +1,9 @@
 from models.user import UserResponse
 from auth.hash import hash_password
 from datetime import datetime
+from itertools import count
+
+
 
 users_db = [
     UserResponse(
@@ -17,3 +20,7 @@ users_db = [
         last_seen=datetime.now()
     )
 ]
+
+
+tasks_db = []
+task_id_counter = count(1)
